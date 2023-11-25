@@ -34,7 +34,7 @@ for i in range(0, len(df), 101):
     ax.plot(data['координата'], data['плотность'])
     ax.set_title('Время ' + str(data['время'][i]) + 'с ') # Добавление подписи к каждому подграфику
     ax.set_xticks(np.arange(0, 110000, step=10000))
-    ax.set_yticks(np.arange(840, 880))
+    ax.set_yticks(np.arange(840, 880, step=10))
 fig2.suptitle('Моделирование движения партий (плотность)')
 # Отображение графиков
 plt.show()
